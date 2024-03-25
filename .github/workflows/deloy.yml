@@ -22,5 +22,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: free02.123host.vn:2222/evo
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}

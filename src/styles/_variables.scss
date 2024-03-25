@@ -1,0 +1,59 @@
+$white: #fff;
+$primary: #001C6D;
+$primary75: #2975B7;
+$primary50: #5A9CD2;
+$primary25: #B6D5ED;
+$primary15: #D8EBFA;
+$primary10: #EEF6FC;
+$blue: #00A7E9;
+$blue3: #F2F2FF;
+$yellow: #FCE542;
+$yellow10: rgba(252, 229, 66, 0.1);
+$yellow2: #FFAC1C;
+$red3 :#FFE6E2;
+$orange: #E47B28;
+$green: #008A5B;
+$mint: #5EC3D1;
+$mint10: rgba(94, 195, 209, 0.1);
+$purple: #6E70E7;
+$success: #04BE7B;
+$success50: #81DEBD;
+$warning: #FFBD4A;
+$warning50: #FFDEA4;
+$error: #FF493E;
+$error50: #F8B8BD;
+$stroke: #BACBD5;
+$textBody: #3C4E5B;
+$textDisable: #B0BBC5;
+$textTitle: #20313E;
+$textTitle60: rgba(32, 49, 62, 0.6);
+$textSubTitle: #6F7D8A;
+$divider: #DDE5EA;
+$divider20: rgba(221, 229, 234, 0.2);
+$backgroundDisabled: #F1F2F4;
+$textButtonDisable: #8A959F;
+$grey: #ccc;
+$logoColor: #001C6D;
+$bubbles: #E6F7FF;
+$pink: #FFF0F6;
+$royalPink: #EB2F96;
+$latte: #FFF7E6;
+$lightPink: #FFB6C1;
+$hotPink: #FF69B4;
+$magenta: #FF00FF;
+$mediumOrchid: #A000FF;
+$tomato: #FF6347;
+$red2: #FF0000;
+$cornflowerBlue: #6495ED;
+$aqua: #00FFFF;
+$cadetBlue: #00AAA1;
+$blue2: #0000FF;
+$darkOliveGreen: #556B2F;
+$darkKhaki: #BDB76B;
+
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px
+);

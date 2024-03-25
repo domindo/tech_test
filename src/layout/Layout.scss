@@ -1,0 +1,298 @@
+@import '~/styles/mediaQuery';
+@import '~/styles/variables';
+
+.navbar {
+    .navbar-nav {
+        height: 100%;
+
+        .nav-item {
+            height: 100%;
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                transition: all .35s cubic-bezier(.215, .61, .355, 1);
+            }
+
+            .nav-link.active {
+                color: #1ba7e0;
+                font-weight: 700 !important;
+            }
+
+            .nav-link:hover {
+                border-width: 0 0 5px;
+                border-color: black black #1ba7e0;
+                border-bottom: 5px solid #1ba7e0;
+                color: #1ba7e0;
+                font-weight: 700;
+            }
+        }
+
+        .nav-header:hover {
+            color: "#1ba7e0";
+            border-bottom: "3px solid #1ba7e0"
+        }
+    }
+}
+
+.learn-drop {
+    a.nav-header {
+        transition: all .35s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    a.nav-header:hover {
+        color: #1ba7e0 !important;
+        font-weight: 700 !important;
+    }
+}
+
+// HeaderMobile
+.accordion-item.active {
+    color: #1ba7e0;
+    font-weight: 700;
+}
+
+.accordion-item .accordion-header button,
+.accordion-item {
+    transition: all .35s cubic-bezier(.215, .61, .355, 1);
+}
+
+.accordion-item .accordion-header button:hover,
+.accordion-item:hover {
+    color: #1ba7e0;
+    font-weight: 700;
+}
+
+
+.contact-medthod-logo:hover {
+    transform: scale(1.15);
+}
+
+// .navbar:hover{
+//     background-color: black;
+// }
+.PhoneInputInput {
+    border-color: white;
+    border: 0px;
+    outline: none;
+}
+
+.icon_message {
+    animation: actionZoom 1s infinite alternate;
+}
+
+@keyframes actionZoom {
+    0% {
+        width: 60px;
+        height: 60px;
+    }
+
+    50% {
+        width: 55px;
+        height: 55px;
+    }
+
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.header-container {
+    &_mobile {
+        display: none;
+
+        @include respond-to(small) {
+            display: block;
+        }
+        @include respond-to(medium) {
+            display: block;
+        }
+        @include respond-to(large) {
+            display: block;
+        }
+    }
+
+    &_list {
+        padding: 5px 20px;
+
+        @include respond-to(small) {
+            padding: 10px;
+        }
+    }
+
+    &_leftImg {
+        flex-direction: column;
+
+        @include respond-to(small) {
+            flex-direction: row;
+        }
+        @include respond-to(medium) {
+            flex-direction: row;
+        }
+        @include respond-to(large) {
+            flex-direction: row;
+        }
+    }
+
+    &_tagline {
+        @include respond-to(small) {
+            display: none;
+        }
+        @include respond-to(medium) {
+            display: none;
+        }
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+
+    &_logo {
+        height: 70%;
+
+        @include respond-to(small) {
+            height: 65%;
+        }
+    }
+
+    &_navigate {
+        @include respond-to(small) {
+            display: none;
+        }
+        @include respond-to(medium) {
+            display: none;
+        }
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+
+    &_leftItem {
+        @include respond-to(small) {
+            display: none;
+        }
+    }
+
+    &_call {
+        width: 40px;
+
+        @include respond-to(small) {
+            width: 36px;
+        }
+    }
+
+    &_menu {
+        cursor: pointer;
+        display: none;
+        font-size: 24px;
+        margin-left: 12px;
+
+        @include respond-to(small) {
+            display: inline-block;
+        }
+        @include respond-to(medium) {
+            display: inline-block;
+        }
+        @include respond-to(large) {
+            display: inline-block;
+        }
+    }
+}
+
+.footer-container {
+    &_box {
+        flex-direction: row;
+
+        @include respond-to(small) {
+            flex-direction: column;
+        }
+        @include respond-to(medium) {
+            flex-direction: column;
+        }
+        @include respond-to(large) {
+            flex-direction: column;
+        }
+    }
+
+    &_forms {
+        width: 400px;
+        height: 655px;
+
+        @include respond-to(small) {
+            width: 315px;
+            height: 670px;
+        }
+
+    }
+
+    &_information {
+        width: 50%;
+
+        @include respond-to(small) {
+            width: 100%;
+        }
+    }
+
+    &_fields {
+        width: 50%;
+
+        @include respond-to(small) {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        @include respond-to(medium) {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        @include respond-to(large) {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &_title {
+        text-align: center;
+        font-size: 2rem;
+
+        @include respond-to(small) {
+            text-align: left;
+            font-size: 30px;
+        }
+    }
+
+    &_header {
+        font-size: 1.5rem;
+
+        @include respond-to(small) {
+            font-size: 20px;
+        }
+    }
+}
+
+.forms-container {
+    input {
+        @include respond-to(small) {
+            font-size: 14px !important;
+        }
+
+    }
+}
+
+.headerMobile-dropdown {
+    .accordion-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: -1px;
+    }
+}
+
+.accordion-item {
+    cursor: pointer;
+}

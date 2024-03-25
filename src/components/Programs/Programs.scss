@@ -1,0 +1,322 @@
+@import '~/styles/mediaQuery';
+@import '~/styles/variables';
+
+.ourPrograms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    align-self: stretch;
+
+    .ourPrograms-container {
+        width: 100%;
+        height: 580px;
+        background-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+
+        // padding-left: 40px;
+        // padding-right: 40px;
+        .ourPrograms-list::-webkit-scrollbar {
+            display: none;
+        }
+
+        .ourPrograms-list {
+            // width: 100%;
+            height: 100%;
+            transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+            opacity: 1;
+            position: relative;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 36px;
+            margin-left: 30px;
+            .ourPrograms-list_item {
+                width: 324px;
+                height: 95%;
+                transform-style: preserve-3d;
+                flex-direction: column;
+                z-index: 2;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding-top: 220px;
+                margin-right: auto;
+                margin-left: auto;
+                box-shadow: 0 9px 14px 4px rgba(0, 0, 0, .23);
+                position: relative;
+                inset: 0;
+                overflow: hidden;
+                padding-left: 20px;
+                padding-right: 20px;
+                flex: 0 0 auto;
+                @include respond-to(small) {
+                    width: 300px;
+                }
+
+                h1 {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #007aac;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1rem;
+                    align-self: center;
+                    margin-bottom: 10px;
+                }
+
+                .ourPrograms-list_img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    font-size: 16px;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: auto;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .ourPrograms-icon.left {
+            left: 0;
+            right: auto;
+        }
+
+        .ourPrograms-icon.right {
+            right: 0;
+            left: auto;
+        }
+
+        .ourPrograms-icon {
+            z-index: 3;
+            right: auto;
+            position: absolute;
+            cursor: pointer;
+            user-select: none;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+        }
+    }
+}
+
+.img_platform:hover {
+    transform: scale(1.1);
+}
+
+// heroPrograms
+.heroPrograms-container {
+    background-position: 100%;
+
+    &_title {
+        font-size: 4rem;
+        text-align: left;
+
+        @include respond-to(small) {
+            text-align: center;
+            font-size: 45px;
+        }
+    }
+
+    &_box {
+        padding-left: 20px;
+
+        @include respond-to(small) {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        @include respond-to(medium) {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        @include respond-to(large) {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &_information {
+        width: 50%;
+        align-items: flex-start;
+
+        @include respond-to(small) {
+            width: 100%;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .92);
+            padding: 20px 20px 40px 20px;
+        }
+        @include respond-to(medium) {
+            width: 100%;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .92);
+            padding: 20px 20px 40px 20px;
+        }
+        @include respond-to(large) {
+            width: 100%;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .92);
+            padding: 20px 20px 40px 20px;
+        }
+    }
+
+    &_content {
+        text-align: left;
+
+        @include respond-to(small) {
+            text-align: center;
+        }
+    }
+}
+
+// aboutPrograms
+.aboutProgram-container {
+    &_box {
+        flex-direction: row;
+
+        @include respond-to(small) {
+            flex-direction: column;
+        }
+        @include respond-to(medium) {
+            flex-direction: column;
+        }
+        @include respond-to(large) {
+            flex-direction: column;
+        }
+    }
+
+    &_title {
+        font-size: 3rem;
+
+        @include respond-to(small) {
+            font-size: 32px;
+        }
+    }
+
+    &_detail {
+        min-width: 400px;
+        padding: 20px 20px 40px 30px;
+
+        @include respond-to(small) {
+            min-width: 0;
+            width: 100%;
+            padding: 20px 20px 40px 20px;
+        }
+        @include respond-to(medium) {
+            min-width: 0;
+            width: 100%;
+            padding: 20px 20px 40px 20px;
+        }
+        @include respond-to(large) {
+            min-width: 0;
+            width: 100%;
+            padding: 20px 20px 40px 20px;
+        }
+    }
+
+    &_items {
+        padding: 0 20px;
+
+        @include respond-to(small) {
+            padding: 0;
+        }
+    }
+}
+
+.learningHighlights-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+
+    @include respond-to(small) {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        padding: 0 10px;
+    }
+    @include respond-to(medium) {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        padding: 0 10px;
+        justify-content: center;
+    }
+    @include respond-to(large) {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        padding: 0 10px;
+        justify-content: center;
+    }
+
+    &_item {
+        flex-direction: row;
+
+        @include respond-to(small) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &_content {
+        margin-left: 20px;
+
+        @include respond-to(small) {
+            margin-left: 0px;
+            align-items: center;
+        }
+    }
+
+    &_title {
+        @include respond-to(small) {
+            text-align: center;
+        }
+    }
+
+    &_sub {
+        text-align: left;
+
+        @include respond-to(small) {
+            text-align: center;
+        }
+    }
+}
+
+.structure-container{
+    flex-direction: row;
+    @include respond-to(small) {
+        flex-direction: column;
+    }
+    @include respond-to(medium) {
+        flex-direction: column;
+    }
+    @include respond-to(large) {
+        flex-direction: column;
+    }
+    &_information{
+        padding: 0 40px 40px 40px;
+        @include respond-to(small) {
+            padding: 0 10px 40px 10px;
+        }
+    }
+}

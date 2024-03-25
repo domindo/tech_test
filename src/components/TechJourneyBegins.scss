@@ -1,0 +1,60 @@
+@import '~/styles/mediaQuery';
+@import '~/styles/variables';
+
+.techJourneyBegins-container {
+
+    &_list {
+        flex-direction: row;
+        align-items: flex-start;
+
+        @include respond-to(small) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include respond-to(medium) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include respond-to(large) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &_btn {
+        @include respond-to(small) {
+            margin-top: 20px;
+        }
+
+    }
+}
+.trip-container{
+    width: 220px;
+    height: 25em;
+    @include respond-to(small) {
+        width: 95%;
+        height:20em;
+    }
+    @include respond-to(medium) {
+        width: 95%;
+        height:18em;
+    }
+    @include respond-to(large) {
+        width: 95%;
+        height:18em;
+    }
+    &_id{
+        @include respond-to(small) {
+            position: absolute;
+            left: 30px;
+        }
+        @include respond-to(medium) {
+            position: absolute;
+            left: 30px;
+        }
+        @include respond-to(large) {
+            position: absolute;
+            left: 30px;
+        }
+    }
+}

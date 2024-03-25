@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    // ? Babel Plugin Module Resolver
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~/style": ["./src/assets/scss/*"]
+    }
+  }
+}

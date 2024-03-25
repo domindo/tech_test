@@ -11,7 +11,7 @@ export const AboutUs = () => {
       <div className="header-aboutus ">
         <div className="banner-aboutus">
           <div className="banner-group">
-            <h1 className="title-group">About us</h1>
+            <h1 className="title-group">Test Git action</h1>
             <p className="header-text-group">
               At TechTrain, we know that tech literacy is essential for the 21st
               century learner; it trains the mind to think, and equips us

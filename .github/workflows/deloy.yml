@@ -33,7 +33,7 @@ jobs:
             jsconfig.json
             package-lock.json
             **/.github/**
-            */dist/*
+            
             **/src/**
             **/.idea/**
             **/public/**

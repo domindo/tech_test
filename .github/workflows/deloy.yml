@@ -25,7 +25,7 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
 
-          server_dir: /public_html/
+          server_dir: public_html/
           exclude: |
             vite.config.js
             README.md
@@ -34,6 +34,8 @@ jobs:
             package-lock.json
             index.html
             **/src/**
-            **/idea/**
+            **/.idea/**
             **/public/**
+            **/.git/**
+            **/node_modules/**
 

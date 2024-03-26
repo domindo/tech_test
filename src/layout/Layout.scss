@@ -127,6 +127,7 @@
 
         @include respond-to(small) {
             flex-direction: row;
+            height: 60px;
         }
         @include respond-to(medium) {
             flex-direction: row;

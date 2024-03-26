@@ -120,9 +120,9 @@ const FooterLayout = () => {
                 marginBottom: "10px",
               }}
             >
-              Tel/WA/Zalo: +84 (0) 899 327 527
-              <br />
-              Email: hello@techtrainasia.com
+              Tel/WA/Zalo: +84 0969391122
+                <br />
+              Email: lienhe@teslatech.edu.vn
             </p>
           </div>
           <h1
@@ -133,7 +133,7 @@ const FooterLayout = () => {
               paddingTop: "20px",
             }}
           >
-            Opening hours
+              Tại các cơ sở của Trường
           </h1>
           <p
             style={{
@@ -142,9 +142,9 @@ const FooterLayout = () => {
               marginBottom: "10px",
             }}
           >
-            Monday - Thursday: 8am - 8pm
+              Thứ Hai đến Thứ Sáu: 8h00 sáng đến 8h tối
             <br />
-            Friday - Sunday: 8am - 6pm
+              Thứ Bảy, Chủ nhật: 9h sáng đến 6h tối
           </p>
         </div>
         <div className="footer-container_fields">

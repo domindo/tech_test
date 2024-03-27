@@ -31,8 +31,10 @@ import trang from "~/assets/images/trang.png"
 import zalo_logo from "~/assets/images/xalo.png"
 import linked from "~/assets/images/linkedin.png"
 import cian from "~/assets/images/cian.jpg"
+import banner_aboutus from "~/assets/images/banner-aboutus.png"
 
 export {
+  banner_aboutus,
   cian,
   linked,
   gleb,

@@ -19,7 +19,7 @@ import scratch_page3 from "~/assets/images/scratch_page3.png"
 import scratch_page4 from "~/assets/images/scratch_page4.png"
 import scratch_page5 from "~/assets/images/scratch_page5.png"
 import scratch_page6 from "~/assets/images/scratch_page6.png"
-import facebook from  "~/assets/images/Facebook.svg"
+import facebook from "~/assets/images/Facebook.svg"
 import alex from "~/assets/images/alex.jpeg"
 import alice from "~/assets/images/alice.jpeg"
 import christo from "~/assets/images/christo.jpeg"
@@ -31,41 +31,40 @@ import trang from "~/assets/images/trang.png"
 import zalo_logo from "~/assets/images/xalo.png"
 import linked from "~/assets/images/linkedin.png"
 import cian from "~/assets/images/cian.jpg"
-import banner_aboutus from "~/assets/images/banner-aboutus.png"
+
 
 export {
-  banner_aboutus,
-  cian,
-  linked,
-  gleb,
-  tri,
-  trang,
-  youtube,
-  zalo_logo,
-  instagram,
-  alice,
-  christo,
-  alex,
-  facebook,
-  zalo,
-  phone,
-  call,
-  logo,
-  fb,
-  home_page,
-  python,
-  blender,
-  machine_learning,
-  roblox,
-  scratch,
-  zoom,
-  typing_club,
-  tinker,
-  develop,
-  scratch_page1,
-  scratch_page2,
-  scratch_page3,
-  scratch_page4,
-  scratch_page5,
-  scratch_page6,
+    cian,
+    linked,
+    gleb,
+    tri,
+    trang,
+    youtube,
+    zalo_logo,
+    instagram,
+    alice,
+    christo,
+    alex,
+    facebook,
+    zalo,
+    phone,
+    call,
+    logo,
+    fb,
+    home_page,
+    python,
+    blender,
+    machine_learning,
+    roblox,
+    scratch,
+    zoom,
+    typing_club,
+    tinker,
+    develop,
+    scratch_page1,
+    scratch_page2,
+    scratch_page3,
+    scratch_page4,
+    scratch_page5,
+    scratch_page6,
 }

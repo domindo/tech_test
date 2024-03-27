@@ -100,6 +100,7 @@ export const SliderImage = () => {
                 }}
                 key={index}
                 src={image}
+                alt="slide-img"
               />
             )
           })}

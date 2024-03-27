@@ -88,6 +88,7 @@ const HeaderLayout = () => {
                     <img
                         onClick={() => navigate(routePaths.app.home)}
                         className="header-container_logo"
+                        alt="logo-img"
                         src={logo}
                     />
                     <div className="header-container_tagline">
@@ -160,7 +161,7 @@ const HeaderLayout = () => {
                         className="d-flex align-items-center"
                         style={{ textDecoration: "none" }}
                     >
-                        <img className="header-container_call" src={call} />
+                        <img className="header-container_call" src={call} alt="call-img"/>
                         <div
                             className="header-container_leftItem"
                             style={{

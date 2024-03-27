@@ -42,6 +42,7 @@ export const BoxExplore = props => {
             left: 0,
             right: 0,
           }}
+          alt={title}
         />
         <div
           style={{
